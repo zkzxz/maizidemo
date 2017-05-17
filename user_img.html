@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<!--低版本IE-->
+		 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		 <!--移动设备优先-->
+		 <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="css/demo2.css"/>
+	<body>
+		<!--导航-->
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="#" class="navbar-brand">Maizi Admin</a>
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;后台首页</a></li>
+						<li class="active"><a href="user_list.html"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;用户管理</a></li>
+						<li><a href="content.html"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;内容管理</a></li>
+						<li><a href="tag.html"><span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;标签管理</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a href="" id="" type="button" data-toggle="dropdown">
+								admin
+								<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="#"><span class="glyphicon glyphicon-screenshot"></span>&nbsp;&nbsp;前台首页</a></li>
+								<li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;个人主页</a></li>
+								<li><a href="#"><span class="glyphicon glyphicon-cog"></span>&nbsp;&nbsp;个人设置</a></li>
+								<li><a href="#"><span class="glyphicon glyphicon-credit-card"></span>&nbsp;&nbsp;账户中心</a></li>
+								<li><a href="#"><span class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp;我的收藏</a></li>
+							</ul>
+						</li>
+						<li><a href="#bbs"><span class="glyphicon glyphicon-off"></span>&nbsp;&nbsp;退出</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!--导航-->
+		
+		
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2">
+					<div class="list-group">
+						<a href="user_list.html" class="list-group-item active">用户管理</a>
+						<a href="user_search.html" class="list-group-item">用户搜索</a>
+						<a href="#" role="button"  class="list-group-item" data-toggle="modal" data-target="#myModal">添加用户</a>
+					</div>
+				</div>
+				<div class="col-md-10">
+					<div class="page-header">
+						<h1>用户管理</h1>
+					</div>
+					<ul class="nav nav-tabs">
+						<li>
+							<a href="user_list.html">用户列表</a>
+						</li>
+						<li class="active">
+							<a href="user_img.html">用户图片</a>
+						</li>
+						<li>
+							<a href="#" role="button" data-toggle="modal" data-target="#myModal">添加用户</a>
+						</li>
+					</ul>
+					
+					<div class="panel-body">
+					<div class="list-group col-md-3">
+						<a href="" class="list-group-item"><img src="img/1-130516160231.jpg" class="img-responsive"/></a>
+					</div>
+					<div class="list-group col-md-3">
+						<a href="" class="list-group-item"><img src="img/3-141009101542.jpg" class="img-responsive"/></a>
+					</div>
+					<div class="list-group col-md-3">
+						<a href="" class="list-group-item"><img src="img/1-130516160231.jpg" class="img-responsive"/></a>
+					</div>
+					<div class="list-group col-md-3">
+						<a href="" class="list-group-item"><img src="img/1-130516160231.jpg" class="img-responsive"/></a>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--Modal-->
+		<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModelLabel">添加用户</h4>
+					</div>
+					<div class="modal-body">
+						<form action="#">
+							<div class="form-group">
+								<label for="addname">用户名</label>
+								<input type="text" id="addname" class="form-control" placeholder="用户名" />
+							</div>
+							<div class="form-group">
+								<label for="addpassword">用户密码</label>
+								<input type="text" id="addpassword" class="form-control" placeholder="用户密码"/>
+							</div>
+							<div class="form-group">
+								<label for="addpassword1">确认密码</label>
+								<input type="text" id="addpassword1" class="form-control" placeholder="确认密码"/>
+							</div>
+							<div class="form-group">
+								<label for="addemail">请输入用户邮箱</label>
+								<input type="email" id="addemail" class="form-control" placeholder="请输入用户邮箱" />
+							</div>
+							<div class="form-group">
+								<label for="addyonhuzu">所属用户组</label>
+								<select id="addyonhuzu" class="form-control">
+									<option value="">限制会员</option>
+									<option value="">新手上路</option>
+									<option value="">注册会员</option>
+									<option value="">中极会员</option>
+									<option value="">高级会员</option>
+								</select>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+						<button type="button" class="btn btn-primary">提交</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--foot-->
+		<footer id="foot">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<p>
+							速度快解放和会计师的回复会计师的回复会计师的尽快发货圣诞节快放寒假开始的划分空间的时刻
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!--footer-->
+	</body>
+	<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</html>
